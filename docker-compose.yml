@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./test:/app/test
+      - ./resources:/app/resources
+      - ./project.clj:/app/project.clj
